@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>addBooks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<script type="text/javascript" language="javascript">
+	function check(){
+	/*for(var i=0;i<document.book_search.length;i++>){
+		
+		if(document.book_search.elements[i].value==''){
+			var j=i+1;
+			alert("第"+j+"个为空！");
+			document.book_search.elements[i].focus();
+		}
+	}*/
+	/*var book_index = document.getElementsByName("book_index");
+	if(book_index[0].value==""){
+		alert("123");
+	}*/
+	/*for(var i=0;i<document.getElementsByName("book_search").length;i++){
+		var name = document.getElementsByName("book_search").item(i).getAttribute("name");
+		alert(name);
+	}*/
+	for(var i=0;i<document.forms[0].length;i++){
+		
+		var element = document.forms[0][i];
+		//alert(element.getAttribute("name"));
+	  if(element.value==""){
+			alert(element.getAttribute("name")+" is required to be filled.");
+			return false;
+		}
+	}
+	return true;
+  }
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/search.css">
+</head>
+<body>
+<!--导航栏 左侧-->
+<div id="navcontainer"> 
+<ul id="navlist"> 
+<li id="active"><a href="#" id="current">Add User</a> </li> 
+<li><a href="deleteUser.php">Delete User</a></li> 
+<li><a href="#">Update User</a></li> 
+<li><a href="addBooks.php">Add Book</a> </li> 
+<li><a href="#">Delete Book</a></li> 
+<li><a href="#">Update Book</a></li> 
+</ul> 
+</div>
+<!--导航栏右侧-->
+<div class="barboxright">
+<div id='tit'>
+<h1><font face="华文雅黑" color="#0000B6"><center>Aibook System</center></font></h1>
+<img src="personal.png" width="44" height="44"><font color="#8D8CCD">&nbsp; Welcome ,</font>
+<font color="#0000B6">&nbsp; Admin</font>
+<font color="#0000B6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php">Exit System</a></font>
+</div>
+<div id="bo2">
+
+<form name='book_search' method='post' action="./addBooks.php" onsubmit="return check()" style="border:1px solid #FFF;width:470px;padding:14px; margin-left:60px;">
+	<tr>
+	<td>
+	  Book_index:&nbsp;<input type='text' name='book_index' size='30'>
+	</td><br><br><br>
+	<td>
+	  Title:&nbsp;&nbsp;&nbsp; <input type='text' name='title' size='30'>
+	</td><br><br>
+	<td>
+	  Author:&nbsp;&nbsp;&nbsp;<input type='text' name='author' size='30'>
+	</td><br><br>
+	<td>
+	  Edition:&nbsp;&nbsp; <input type='text' name='edition' size='30'>
+	</td><br><br>
+	<td>
+	  Publisher:&nbsp;  <input type='text' name='publisher' size='30'>
+	</td><br><br>
+	<td>
+	  Publish_Date:<input type='text' name='publish_date' size='30'>
+	</td><br><br>
+	<td>
+	  ISBN:&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='ISBN' size='30'>
+	</td><br><br>
+	<td>
+	  Description: <input type='text' name='description' size='30'>
+	</td><br><br>
+	<td>
+	  State:&nbsp;&nbsp;&nbsp; <input type='text' name='state' size='30'>
+	</td><br><br>
+	<td>
+	  Amount:&nbsp;&nbsp;&nbsp;<input type='text' name='amount' size='30'>
+	</td><br><br>
+  </tr>
+  <tr >
+	<td></td>
+	<td>
+		<input type='submit' value='Submit'>
+	</td>
+  </tr>
+	
+</form></div></div>
+</body>
+</html>

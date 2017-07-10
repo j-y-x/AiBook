@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>DeleteUser</title>
+<meta http-equiv="Content-Type" content="text/php; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="css/search.css">
+</head>
+<body background="backgroud.png">
+<h1><font color="#663399" face="华文雅黑"><center>Welcome AiBook System</center></font></h1>
+<div id='tit'>
+<img src="personal.png" width="44" height="44"><font color="#8D8CCD">&nbsp; Welcome ,</font>
+<font color="#0000B6">&nbsp; Admin</font>
+<font color="#0000B6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.php">Exit System</a></font>
+<br>
+</div>
+<br><br><br><br><br><br><br><br><br>
+
+<!--导航栏 左侧-->
+<div id="navcontainer"> 
+<ul id="navlist"> 
+<li id="active"><a href="sign.php" id="current">Add User</a></li> 
+<li><a>Delete User</a></li> 
+<li><a>Update User</a></li> 
+<li><a href="addBooks.html">Add Book</a></li> 
+<li><a href="deleteUser.html">Delete Book</a></li>
+<li><a href="search.php?User_Id=<?php echo $uinfo; ?>">Update User</a></li>
+</ul> 
+</div>
+<div id="bo4">
+<h3><center><font color="#663399" face="华文雅黑">Please enter the uesr'id that you want to delete</font></center></h3>
+<center>
+<input type="text" name="delete_user_id">
+</center>
+<br />
+<center>
+<input type="submit" value="ok">
+</center>
+</div>
+</body>
+</html>

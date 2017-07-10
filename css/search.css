@@ -1,0 +1,123 @@
+body{
+	background:url(../backgroud.png);
+	}
+body,td,th {
+	font-family: "楷体";
+	color: black;
+}
+a:link {
+	color:#06F;font-size:30;
+}
+a:visited {
+	color:#06F;font-size:30;
+}
+a:active{color:#06F;font-size:30;}
+a:hover{color:#99F;font-family:楷体;font-size:30;}
+#ad{
+	position: absolute;
+	bottom: 28px;
+	left: -1px;
+	width: 100%;
+}
+#tit{
+	position: absolute;
+	top: 33px;
+	left: 98px;
+	width: 908px;
+	height: 145px;
+	font-size: 18px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+#bo{
+	position: absolute;
+	top: 226px;
+	left: 294px;
+	width: 715px;
+	border: 1px solid #8D8CCD;
+	border-radius: 10px;
+	padding: 10px 0 10px 0;
+	height: 265px;
+}
+.bo3{
+	position: absolute;
+	top: 205px;
+	left: 308px;
+	width: 700px;
+	
+}
+#bo2{
+	position: absolute;
+	top: 209px;
+	left: 294px;
+	width: 715px;
+	padding: 0px 0 10px 0;
+}
+#bo4{
+	position: absolute;
+	top: 480px;
+	left: 294px;
+	width: 715px;
+	padding: 0px 0 10px 0;
+}
+#co{position:absolute;bottom:0;left:0;	width:100%;}
+
+/*导航栏*/
+barboxleft{
+}
+barboxright{
+	margin-left:150px;
+	width:50%;
+	border:1px solid #8D8CCD;
+}
+
+
+#navcontainer { margin-left: 90px; margin-top:200px;width:147px;} 
+
+#navcontainer ul 
+{ 
+margin: 0; 
+padding: 0; 
+list-style-type: none; 
+font-family: verdana, arial, Helvetica, sans-serif; 
+font-weight: bold; 
+font-size:17px;
+} 
+
+#navcontainer li { margin: 0; } 
+
+#navcontainer a 
+{ 
+display: block; 
+padding: 25px 0px 0 35px; 
+width: 145px; 
+height:45px;
+/*color: #000; */
+color:#8D8CCD;
+background-color: #F3EEE0; 
+text-decoration: none; 
+border-top: 1px solid #fff; 
+border-left: 1px solid #fff; 
+border-bottom: 1px solid #8D8CCD; 
+border-right: 1px solid #8D8CCD; 
+font-weight: bold; 
+font-size:17px; 
+background-image: url(images/vertical06.jpg); 
+background-repeat: no-repeat; 
+background-position: 0 0; 
+} 
+
+#navcontainer a:hover 
+{ 
+color:#FFF; 
+background-color: #8D8CCD; 
+text-decoration: none; 
+border-top: 1px solid #fff; 
+border-left: 1px solid #fff; 
+border-bottom: 1px solid #fff; 
+border-right: 1px solid #fff; 
+background-image: url(images/vertical06a.jpg); 
+background-repeat: no-repeat; 
+background-position: 0 0; 
+font-weight: bold; 
+font-size:17px;
+} 
